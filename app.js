@@ -49,7 +49,9 @@ app.get("/posts/:postName", function(req, res) {
   posts.forEach(function(post) {
     const storedTitle = _.lowerCase(post.title);
     if (requestedTitle === storedTitle) {
-      res.render("post", {requestedPost: post});
+      res.render("post", {
+        requestedPost: post
+      });
     } else {
       console.log("Match not found!");
     }
@@ -65,10 +67,6 @@ app.post("/compose", function(req, res) {
   posts.push(post);
   res.redirect("/");
 })
-
-
-
-
 
 
 app.listen(process.env.PORT || 3000, function() {
