@@ -1,0 +1,3 @@
+#Ignore files below while commiting repo
+store
+node_modules
