@@ -23,7 +23,7 @@ app.use(express.static("public"));
 ///////////// mongoDB setup //////////////
 
 // Establish a mongoDB Client and create a databse in mongoDB
-mongoose.connect("mongodb://localhost:27017/blogDB",
+mongoose.connect("mongodb+srv://demon-skd:Grbbs03AS!@deviloper-skd.rvxxu.mongodb.net/blogDB",
   {
     useUnifiedTopology: true,
     useNewUrlParser: true
